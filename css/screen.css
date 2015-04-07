@@ -179,6 +179,10 @@ ul.profiles a {
   color: #D73277;
 }
 
+.fa-facebook-square:hover {
+  color: #3B5998;
+}
+
 a.artsy-style {
   color: #336699;
   text-decoration: none;
@@ -233,5 +237,8 @@ a.artsy-style:hover::after, a.artsy-style:active::after {
   }
   a .fa-dribbble {
     color: #D73277;
+  }
+  a .fa-facebook-square {
+    color: #3B5998;
   }
 }
