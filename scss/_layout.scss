@@ -1,0 +1,48 @@
+//////////////////////////////////////
+// LAYOUT ////////////////////////////
+// Author: Ariel Jatib ///////////////
+//////////////////////////////////////
+
+
+body {
+	text-align: center; /* for IE6 */
+}
+
+a { // treatment from art.sy - ref : http://artsy.github.io/blog/2012/04/10/css-trick-adjusting-text-underlines/
+	display: inline-block;
+	position: relative;
+	&::after {
+		position: absolute;
+		left: 0;
+		height: 1.3em;
+		width: 100%;
+		margin-top: 5px;
+		display: inline-block;
+	}
+}
+
+div {
+	width: $page-width;
+	margin: 20px auto; //random height for now. 
+	text-align: left;
+	&:first-of-type {
+		margin-top: 100px;
+	}
+}
+
+footer {
+	@extend div;
+	display: inline-block;
+}
+
+// RESPONSIVE //////////////////////
+@media (max-width: 767px) { 
+	div{
+		width: 95%;
+		padding: 10px;
+		&:first-of-type {
+			margin-top: 30px;
+			margin-bottom: 5px;
+		}
+	}
+}

@@ -1,0 +1,71 @@
+//////////////////////////////////////
+// NAV, and LINKS  ///////////////////
+// Author: Ariel Jatib ///////////////
+//////////////////////////////////////
+
+ul.profiles {
+	li {
+		float: left;
+		padding-right: 1rem;
+		font-size: 2.5rem;
+	}
+	a {
+		color: $text-color;
+	}
+}
+
+
+// social media
+.fa-twitter:hover { color: #55ACEE; }
+.fa-instagram:hover { color: #5D3830; }
+.fa-foursquare:hover { color: #2841E2; }
+.fa-delicious:hover { color: #1C57D6; }
+.fa-pinterest-square:hover { color: #A40013 ; }
+.fa-google-plus:hover { color: #CA3421 ; }
+.fa-github-alt:hover { color: #427B31; }
+.fa-flickr:hover { color: #194AD9 ; }
+.fa-tumblr:hover { color: #222C3D ; }
+.fa-yelp:hover { color: #AB0000; }
+.fa-dribbble:hover { color: #D73277; }
+
+// artsy style links
+a.artsy-style {
+	color: $blue;
+	text-decoration: none;
+	&::after {
+		content: '';
+		border-bottom: 1px dotted;
+	}
+	&:hover, &:active {
+		&::after {
+			border-bottom-style: solid;
+		}
+	}
+}
+
+// RESPONSIVE //////////////////////
+@media (max-width: 767px) { 
+	ul.profiles {
+		text-align: center;
+		margin-left: -10px;
+		li {
+			float: none;
+			padding-right: 2rem;
+			font-size: 4rem;
+			line-height: $font-size*5.5;
+			display: inline; 
+		}
+	}
+	a {
+		.fa-twitter { color: #55ACEE; }
+		.fa-instagram { color: #5D3830; }
+		.fa-foursquare { color: #2841E2; }
+		.fa-delicious { color: #1C57D6; }
+		.fa-pinterest-square { color: #A40013 ; } 
+		.fa-google-plus { color: #CA3421 ; }
+		.fa-flickr { color: #194AD9 ; }
+		.fa-tumblr { color: #222C3D ; }
+		.fa-yelp { color: #AB0000; }
+		.fa-dribbble { color: #D73277; }
+	}
+}

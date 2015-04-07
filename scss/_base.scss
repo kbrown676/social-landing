@@ -1,0 +1,40 @@
+//////////////////////////////////////
+// BASE elements & color /////////////
+// Author: Ariel Jatib ///////////////
+//////////////////////////////////////
+
+
+// Bring in da font's ... da Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+// Now let's start with the styles
+body {
+	font: #{$font-size}/#{$line-height} $font-stack;
+}
+
+h1 {
+	font-size: $font-size*2;
+}
+
+div {
+	&:first-of-type p, h2 {
+		font-size: $font-size+2px;
+	}
+}
+
+footer {
+	font-size: $font-size*.75;
+	color: lighten($text-color, 60%);
+}
+
+// RESPONSIVE //////////////////////
+@media (max-width: 767px) { 
+	div:first-of-type p {
+		font-size: $font-size;
+		line-height: $line-height*0.8;
+	}
+	h1	{
+		font-size:  $font-size*1.6;
+		line-height: $line-height*1.3;
+	}
+}

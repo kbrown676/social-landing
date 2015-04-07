@@ -1,0 +1,237 @@
+/* Import this file using the following HTML or equivalent:
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Lato);
+html, body, div, footer, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  font: 16px/28px "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+div:first-of-type p, footer:first-of-type p, div h2, footer h2 {
+  font-size: 18px;
+}
+
+footer {
+  font-size: 12px;
+  color: #999999;
+}
+
+@media (max-width: 767px) {
+  div:first-of-type p, footer:first-of-type p {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  h1 {
+    font-size: 25.6px;
+    line-height: 36.4px;
+  }
+}
+body {
+  text-align: center;
+  /* for IE6 */
+}
+
+a {
+  display: inline-block;
+  position: relative;
+}
+a::after {
+  position: absolute;
+  left: 0;
+  height: 1.3em;
+  width: 100%;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+div, footer {
+  width: 940px;
+  margin: 20px auto;
+  text-align: left;
+}
+div:first-of-type, footer:first-of-type {
+  margin-top: 100px;
+}
+
+footer {
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  div, footer {
+    width: 95%;
+    padding: 10px;
+  }
+  div:first-of-type, footer:first-of-type {
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+}
+ul.profiles li {
+  float: left;
+  padding-right: 1rem;
+  font-size: 2.5rem;
+}
+ul.profiles a {
+  color: #000;
+}
+
+.fa-twitter:hover {
+  color: #55ACEE;
+}
+
+.fa-instagram:hover {
+  color: #5D3830;
+}
+
+.fa-foursquare:hover {
+  color: #2841E2;
+}
+
+.fa-delicious:hover {
+  color: #1C57D6;
+}
+
+.fa-pinterest-square:hover {
+  color: #A40013;
+}
+
+.fa-google-plus:hover {
+  color: #CA3421;
+}
+
+.fa-github-alt:hover {
+  color: #427B31;
+}
+
+.fa-flickr:hover {
+  color: #194AD9;
+}
+
+.fa-tumblr:hover {
+  color: #222C3D;
+}
+
+.fa-yelp:hover {
+  color: #AB0000;
+}
+
+.fa-dribbble:hover {
+  color: #D73277;
+}
+
+a.artsy-style {
+  color: #336699;
+  text-decoration: none;
+}
+a.artsy-style::after {
+  content: '';
+  border-bottom: 1px dotted;
+}
+a.artsy-style:hover::after, a.artsy-style:active::after {
+  border-bottom-style: solid;
+}
+
+@media (max-width: 767px) {
+  ul.profiles {
+    text-align: center;
+    margin-left: -10px;
+  }
+  ul.profiles li {
+    float: none;
+    padding-right: 2rem;
+    font-size: 4rem;
+    line-height: 88px;
+    display: inline;
+  }
+
+  a .fa-twitter {
+    color: #55ACEE;
+  }
+  a .fa-instagram {
+    color: #5D3830;
+  }
+  a .fa-foursquare {
+    color: #2841E2;
+  }
+  a .fa-delicious {
+    color: #1C57D6;
+  }
+  a .fa-pinterest-square {
+    color: #A40013;
+  }
+  a .fa-google-plus {
+    color: #CA3421;
+  }
+  a .fa-flickr {
+    color: #194AD9;
+  }
+  a .fa-tumblr {
+    color: #222C3D;
+  }
+  a .fa-yelp {
+    color: #AB0000;
+  }
+  a .fa-dribbble {
+    color: #D73277;
+  }
+}
