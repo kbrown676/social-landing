@@ -183,6 +183,10 @@ ul.profiles a {
   color: #3B5998;
 }
 
+.fa-vine:hover {
+  color: #00bf8f;
+}
+
 a.artsy-style {
   color: #336699;
   text-decoration: none;
@@ -240,5 +244,8 @@ a.artsy-style:hover::after, a.artsy-style:active::after {
   }
   a .fa-facebook-square {
     color: #3B5998;
+  }
+  a .fa-vine {
+    color: #00bf8f;
   }
 }
